@@ -1,0 +1,16 @@
+<launch>
+  <basedir path="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated"/>
+  <copy file="buslines.rou.xml"/>
+  <copy file="busstops.add.xml"/>
+  <copy file="e1detectors.add.xml"/>
+  <copy file="lust.net.xml"/>
+  <copy file="lust.poly.xml"/>
+  <copy file="tll.static.xml"/>
+  <copy file="transit.rou.xml"/>
+  <copy file="vtypes.add.xml"/>
+  <copy file="local.actuated.0.rou.xml"/>
+  <copy file="local.actuated.1.rou.xml"/>
+  <copy file="local.actuated.2.rou.xml"/>
+  <cope file="sc1_state_999.000_2.xml.gz"/>
+  <copy file="due.actuated.sumocfg" type="config"/>
+</launch>

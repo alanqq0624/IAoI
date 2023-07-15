@@ -1,0 +1,129 @@
+Loading net-file from 'lust.net.xml' ... done (577ms).
+Loading additional-files from 'vtypes.add.xml' ... done (0ms).
+Loading additional-files from 'busstops.add.xml' ... done (6ms).
+Loading additional-files from 'e1detectors.add.xml' ... done (23ms).
+Loading additional-files from 'lust.poly.xml' ... done (242ms).
+Loading additional-files from 'tll.static.xml' ... done (7ms).
+Loading done.
+Simulation started with time: 0.00
+Warning: Vehicle 'randUni13909:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=471.00.
+Warning: Vehicle '0BEtoLU.8' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1195.00.
+Warning: Vehicle '0BEtoLU.11' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1507.00.
+Warning: Vehicle '0BEtoLU.14' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=1791.00.
+Warning: Vehicle 'randUni13338:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2328.00.
+Warning: Vehicle 'randUni3136:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2358.00.
+Warning: Vehicle 'randUni16436:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=2449.00.
+Warning: Vehicle 'randUni7088:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3271.00.
+Warning: Vehicle 'randUni7170:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3557.00.
+Warning: Vehicle 'randUni5326:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3712.00.
+Warning: Vehicle 'randUni4375:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3864.00.
+Warning: Vehicle '1BEtoLU.5.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=3980.00.
+Warning: Vehicle 'randUni20768:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4122.00.
+Warning: Vehicle '1BEtoLU.13.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4152.00.
+Warning: Vehicle '1BEtoLU.18.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4333.00.
+Warning: Vehicle '1BEtoLU.19' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4383.00.
+Warning: Vehicle '1DEtoLU.15' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4389.00.
+Warning: Vehicle '1DEtoLU.18.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4425.00.
+Warning: Vehicle '1BEtoLU.21' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4476.00.
+Warning: Vehicle '1BEtoLU.22' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4477.00.
+Warning: Vehicle 'randUni8011:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4512.00.
+Warning: Vehicle 'randUni10713:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4517.00.
+Warning: Vehicle 'randUni10713:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4526.00.
+Warning: Vehicle 'randUni10713:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4536.00.
+Warning: Vehicle '1BEtoLU.23' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4612.00.
+Warning: Teleporting vehicle 'randUni13755:1.1'; collision with vehicle 'randUni13755:1', lane='-31578#4_1', gap=-0.14, time=4766.00 stage=move.
+Warning: Vehicle 'randUni13755:1.1' ends teleporting on edge '--31896', time=4766.00.
+Warning: Vehicle '1BEtoLU.29.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=4826.00.
+Warning: Vehicle 'randUni6552:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5028.00.
+Warning: Vehicle '1BEtoLU.31.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5087.00.
+Warning: Vehicle 'randUni13755:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5101.00.
+Warning: Vehicle '1DEtoFR.29' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5108.00.
+Warning: Vehicle 'randUni13755:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5126.00.
+Warning: Vehicle '1BEtoFR.25.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5229.00.
+Warning: Vehicle 'randUni10787:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5273.00.
+Warning: Vehicle 'randUni8581:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5277.00.
+Warning: Vehicle 'randUni10787:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5288.00.
+Warning: Vehicle 'randUni10787:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5295.00.
+Warning: Vehicle '1BEtoLU.34.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5344.00.
+Warning: Vehicle 'randUni3725:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5422.00.
+Warning: Vehicle 'randUni17471:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5449.00.
+Warning: Vehicle 'randUni17471:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5451.00.
+Warning: Vehicle 'randUni17471:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5468.00.
+Warning: Vehicle 'randUni3725:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5480.00.
+Warning: Vehicle '1BEtoLU.40.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5508.00.
+Warning: Vehicle 'randUni16631:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5520.00.
+Warning: Vehicle '1BEtoLU.41' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5558.00.
+Warning: Vehicle 'randUni16631:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5567.00.
+Warning: Vehicle 'randUni4479:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5572.00.
+Warning: Vehicle 'randUni16631:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5600.00.
+Warning: Vehicle '1BEtoLU.44' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5765.00.
+Warning: Vehicle '1FRtoBE.41.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=5836.00.
+Warning: Vehicle '1BEtoLU.54.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6115.00.
+Warning: Vehicle '1BEtoLU.56.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6305.00.
+Warning: Vehicle 'randUni19047:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6375.00.
+Warning: Vehicle 'randUni19047:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6396.00.
+Warning: Vehicle '1BEtoLU.57' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6401.00.
+Warning: Vehicle 'randUni17653:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6429.00.
+Warning: Vehicle 'randUni17653:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6468.00.
+Warning: Vehicle 'randUni17653:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6596.00.
+Warning: Vehicle '1BEtoLU.58.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6614.00.
+Warning: Vehicle '1BEtoLU.60' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6730.00.
+Warning: Vehicle 'randUni18459:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6735.00.
+Warning: Vehicle 'randUni18459:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6753.00.
+Warning: Vehicle 'randUni18459:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6762.00.
+Warning: Vehicle 'randUni10220:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6769.00.
+Warning: Vehicle '1BEtoLU.63' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6816.00.
+Warning: Vehicle 'randUni3462:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6886.00.
+Warning: Vehicle 'randUni3462:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=6909.00.
+Warning: Vehicle 'randUni1532:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7023.00.
+Warning: Vehicle 'randUni1532:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7049.00.
+Warning: Vehicle 'randUni1532:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7054.00.
+Warning: Vehicle '1BEtoLU.78.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7358.00.
+Warning: Vehicle '2BEtoLU.0' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7433.00.
+Warning: Vehicle 'randUni171:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7513.00.
+Warning: Vehicle 'randUni171:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7516.00.
+Warning: Vehicle 'randUni171:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7521.00.
+Warning: Vehicle '2BEtoLU.4' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7526.00.
+Warning: Vehicle '2BEtoLU.4.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7531.00.
+Warning: Vehicle 'randUni20901:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7532.00.
+Warning: Vehicle 'randUni20901:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7556.00.
+Warning: Vehicle 'randUni20296:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7824.00.
+Warning: Vehicle 'randUni15977:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7896.00.
+Warning: Vehicle 'randUni15977:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7910.00.
+Warning: Vehicle '2BEtoLU.18.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7934.00.
+Warning: Vehicle '2BEtoLU.19.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7956.00.
+Warning: Vehicle '2BEtoLU.22.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=7999.00.
+Warning: Vehicle 'randUni13156:1.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8165.00.
+Warning: Vehicle 'randUni13156:1.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8178.00.
+Warning: Vehicle 'randUni13156:1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8182.00.
+Warning: Vehicle '2BEtoLU.25.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8224.00.
+Warning: Vehicle '2BEtoLU.25.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8225.00.
+Warning: Vehicle '2BEtoLU.30.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8397.00.
+Warning: Vehicle '2BEtoLU.31.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8400.00.
+Warning: Vehicle '2BEtoLU.31.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8401.00.
+Warning: Vehicle '2BEtoLU.34' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8477.00.
+Warning: Vehicle '2BEtoLU.36.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8495.00.
+Warning: Vehicle '2BEtoLU.41.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8645.00.
+Warning: Vehicle '2BEtoLU.43' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8646.00.
+Warning: Vehicle '2BEtoLU.49.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8743.00.
+Warning: Vehicle '2BEtoLU.49.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8744.00.
+Warning: Vehicle '2BEtoLU.50.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8831.00.
+Warning: Vehicle '2BEtoLU.50.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8841.00.
+Warning: Vehicle '2BEtoLU.51' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=8892.00.
+Warning: Vehicle '2BEtoLU.54.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9011.00.
+Warning: Vehicle '2BEtoLU.55.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9039.00.
+Warning: Vehicle '2BEtoLU.56.2' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9040.00.
+Warning: Vehicle '2BEtoLU.56' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9055.00.
+Warning: Vehicle '2BEtoLU.58.1' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9084.00.
+Warning: Vehicle '2BEtoLU.58' performs emergency braking with decel=-9.00 wished=4.50 severity=1.00, time=9098.00.
+Simulation ended at time: 9257.00
+Performance: 
+ Duration: 432.68s
+ Real time factor: 21.3948
+ UPS: 8320.395216
+Vehicles: 
+ Inserted: 8016 (Loaded: 8177)
+ Running: 744
+ Waiting: 0
+Teleports: 1 (Collisions: 1)
+

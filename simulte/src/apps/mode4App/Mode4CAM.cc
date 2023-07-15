@@ -1,0 +1,385 @@
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/.
+//
+
+/**
+ * Mode4App is a new application developed to be used with Mode 4 based simulation
+ * Author: Brian McCarthy
+ * Email: b.mccarthy@cs.ucc.ie
+ */
+
+#include "apps/mode4App/Mode4CAM.h"
+#include "common/LteControlInfo.h"
+#include "stack/phy/packet/cbr_m.h"
+
+Define_Module(Mode4CAM);
+
+void Mode4CAM::initialize(int stage)
+{
+    Mode4BaseApp::initialize(stage);
+    if (stage==inet::INITSTAGE_LOCAL){
+        // Register the node with the binder
+        // Issue primarily is how do we set the link layer address
+
+        // Get the binder
+        binder_ = getBinder();
+
+        // Get our UE
+        cModule *ue = getParentModule();
+
+        //Register with the binder
+        nodeId_ = binder_->registerNode(ue, UE, 0);
+
+        // Register the nodeId_ with the binder.
+        binder_->setMacNodeId(nodeId_, nodeId_);
+
+        // Get mobility module of our UE
+        ueMob = check_and_cast<inet::IMobility*>(ue->getSubmodule("mobility"));
+        if (ueMob == nullptr) {
+            EV << "Mode4CAM::initialize - stage " << stage
+                      << "- Error: can't find UE[" << ue
+                      << "] submodule 'mobility'" << endl;
+        }
+        // Get VeinsInetMobility module of our UE
+        ueMobVeins = check_and_cast<veins::VeinsInetMobility*>(ue->getSubmodule("mobility"));
+        if (ueMobVeins == nullptr) {
+            EV << "Mode4Aircomp::initialize - stage " << stage
+                    << "- Error: can't find UE[" << ue
+                    << "] submodule 'VeinsInetMobility'" << endl;
+        }
+        ueMobCmd = ueMobVeins->getVehicleCommandInterface();
+        if (ueMobCmd == nullptr) {
+            EV << "Mode4Aircomp::initialize - stage " << stage
+                    << "- Error: can't find UE[" << ue
+                    << "] submodule 'TraCICommandInterface::Vehicle'" << endl;
+        }
+
+        EV << "Mode4CAM::initialize - stage "<< stage << " complete: "
+                << "UeName[" << ue->getFullName() << "], "
+                << "nodeId[" << nodeId_ << "]"
+                << endl;
+
+    } else if (stage==inet::INITSTAGE_APPLICATION_LAYER) {
+        selfSender_ = NULL;
+        nextSno_ = 0;
+        currentPos = ueMob->getCurrentPosition();
+        currentSpeed = ueMob->getCurrentSpeed();
+        selfCAM = NULL;
+        selfRisk = false;
+        selfTAoISender_ = NULL;
+        lastAction = 0;
+        rcf = 1.1;
+        lastTAoI = 0;
+
+        selfSender_ = new cMessage("selfSender");
+        selfTAoISender_ = new cMessage("selfTAoISender");
+
+        size_ = par("packetSize");
+        period_ = par("period");
+        priority_ = par("priority");
+        duration_ = par("duration");
+        periodOrigin = period_;
+
+        sentMsg_ = registerSignal("sentMsg");
+        delay_ = registerSignal("delay");
+        rcvdMsg_ = registerSignal("rcvdMsg");
+        cbr_ = registerSignal("cbr");
+        period_signal = registerSignal("periodCAM");
+        taoi_ = registerSignal("TAoI");
+        action_ = registerSignal("action");
+        selfTE_ = registerSignal("selfTE");
+        speed_ = registerSignal("speed");
+        acceleration_ = registerSignal("acceleration");
+
+        double delay = 0.001 * intuniform(0, 1000, 0);
+        scheduleAt((simTime() + delay).trunc(SIMTIME_MS), selfSender_);
+        delay = 0.001 * intuniform(0, 1000, 0);
+        scheduleAt((simTime() + delay).trunc(SIMTIME_MS), selfTAoISender_);
+
+        EV << "Mode4CAM::initialize - stage "<< stage << " complete: "
+                << "packetSize[" << size_ << "], "
+                << "period{" << period_ << "], "
+                << "priority{" << priority_ << "], "
+                << "duration{" << duration_ << "]"
+                << endl;
+
+    }
+}
+
+void Mode4CAM::handleLowerMessage(cMessage* msg)
+{
+    EV << "Mode4CAM::handleMessage -Packet receive: " << msg << endl;
+    if (msg->isName("CBR")) {
+        Cbr* cbrPkt = check_and_cast<Cbr*>(msg);
+        double channel_load = cbrPkt->getCbr();
+        emit(cbr_, channel_load);
+        delete cbrPkt;
+    } else if (msg->isName("CAM")){
+        Mode4CAM_Packet* pkt = check_and_cast<Mode4CAM_Packet*>(msg);
+        if (pkt == 0)
+            throw cRuntimeError("Mode4CAM::handleMessage - FATAL! Error when casting to Mode4CAM_Packet");
+
+        // delete the previous CAM from the same Node
+        for (unsigned int i = 0; i <nearCAM.size(); i++) {
+            if (nearCAM[i]->getNodeId() == pkt->getNodeId()) {
+                delete nearCAM[i];
+                nearCAM.erase(nearCAM.begin()+i);
+            }
+        }
+
+        EV << "Mode4CAM::handleMessage - nearCAM[" << nearCAM.size() << "]: " << endl;
+        for (unsigned int i = 0; i < nearCAM.size(); i++) {
+            EV << "SeqNo[" << nearCAM[i]->getSno() << "], "
+                    << "SenderNodeId[" << nearCAM[i]->getNodeId() << "], "
+                    << "Period[" << period_ << "], "
+                    << "Pos[" << nearCAM[i]->getPos()<< "], "
+                    << "Speed[" << nearCAM[i]->getSpeed() << "], "
+                    << "Risk" << nearCAM[i]->getRisk() << "], "
+                    << "Delay[" << simTime() - nearCAM[i]->getTimestamp() << "]"
+                    << endl;
+        }
+
+        // push received CAM into nearby vehicle CAM list
+        nearCAM.push_back(pkt);
+
+        // emit statistics
+        simtime_t delay = simTime() - pkt->getTimestamp();
+        emit(delay_, delay);
+        emit(rcvdMsg_, (long)1);
+
+        EV << "Mode4CAM::handleMessage - Received CAM Packet: "
+                << "SeqNo[" << pkt->getSno() << "], "
+                << "SenderNodeId[" << pkt->getNodeId() << "], "
+                << "Period[" << period_ << "], "
+                << "Pos[" << pkt->getPos() << "], "
+                << "Speed[" << pkt->getSpeed() << "], "
+                << "Risk" << pkt->getRisk() << "], "
+                << "Delay[" << delay << "]"
+                << endl;
+
+    } else {
+        EV << "Mode4CAM::handleMessage - Unrecognized Packet received: "<< msg << endl;
+        delete msg;
+    }
+}
+
+void Mode4CAM::handleSelfMessage(cMessage* msg)
+{
+    if (!strcmp(msg->getName(), "selfSender")){
+
+        // Get current mobility
+        currentPos = ueMob->getCurrentPosition();
+        currentSpeed = ueMob->getCurrentSpeed();
+
+        // Replace method
+        Mode4CAM_Packet* packet = new Mode4CAM_Packet("CAM");
+
+        packet->setSno(nextSno_);
+        packet->setTimestamp(simTime());
+        packet->setPeriod(period_);
+        packet->setNodeId(nodeId_);
+        packet->setPos(currentPos);
+        packet->setSpeed(currentSpeed);
+        packet->setRisk(selfRisk);
+        packet->setByteLength(size_);
+
+        delete selfCAM;
+        selfCAM = packet->dup();
+
+        auto lteControlInfo = new FlowControlInfoNonIp();
+
+        lteControlInfo->setSrcAddr(nodeId_);
+        lteControlInfo->setDirection(D2D_MULTI);
+        lteControlInfo->setPriority(priority_);
+        lteControlInfo->setDuration(duration_);
+        lteControlInfo->setCreationTime(simTime());
+
+        packet->setControlInfo(lteControlInfo);
+
+        Mode4BaseApp::sendLowerPackets(packet);
+        emit(sentMsg_, (long)1);
+        emit(period_signal, SIMTIME_DBL(period_));
+
+        EV << "Mode4CAM::handleSelfMessage - CAM Packet send: "
+                << "SeqNo[" << nextSno_ << "], "
+                << "NodeId[" << nodeId_ << "], "
+                << "Period[" << period_ << "], "
+                << "Pos[" << currentPos << "], "
+                << "Speed[" << currentSpeed << "]"
+                << "Risk" << selfRisk << "], "
+                << endl;
+
+        scheduleAt(simTime() + period_, selfSender_);
+
+        nextSno_++;
+    } else if (!strcmp(msg->getName(), "selfTAoISender")) {
+        EV << "Mode4CAM::handleSelfMessage - selfTAoISender" << endl;
+        TAoI_RateControl();
+        scheduleAt(simTime() + 1, selfTAoISender_);
+    }
+    else
+        throw cRuntimeError("Mode4CAM::handleMessage - Unrecognized self message");
+}
+
+bool Mode4CAM::selfRiskAssess(Mode4CAM_Packet* selfLastCAM, double errorThreshold){
+    EV << "Mode4CAM::selfRiskAssess: start - " << selfRisk << endl;
+
+    // selfCAM NULL check
+    if (!selfLastCAM) {
+        EV << "Mode4CAM::selfRiskAssess: selfCAM still NULL"<< endl;
+        selfRisk = false;
+        return selfRisk;
+    }
+
+    // Get current mobility
+    inet::Coord curPos = ueMob->getCurrentPosition();
+    inet::Coord curSpeed = ueMob->getCurrentSpeed();
+
+    // self-estimate location by selfCAM
+    double t = SIMTIME_DBL(simTime());
+    double x = selfLastCAM->getPos().x + selfLastCAM->getSpeed().x * t;
+    double y = selfLastCAM->getPos().y + selfLastCAM->getSpeed().y * t;
+    inet::Coord* selfPos = new Coord(x, y, 0);
+
+    // Line 1: Calculate the Self Tracking Error τp,v using (xv(t),yv(t)) and ( ̄xv(t),  ̄yv(t)) based on Eq .5.
+    double selfTrackError = curPos.distance(*selfPos);
+    emit(selfTE_, selfTrackError);
+
+    // Line 2 - 7
+    if (selfTrackError>=errorThreshold){
+        selfRisk = true;
+    }
+    else{
+        selfRisk = false;
+    }
+
+    EV << "Mode4CAM::selfRiskAssess: end - " << selfRisk << endl;
+
+    // Line 8
+    return selfRisk;
+}
+
+simtime_t Mode4CAM::TAoI_RateControl(){
+    EV << "Mode4CAM::TAoI_RateControl: start - " << period_ << endl;
+    double t = SIMTIME_DBL(simTime());
+    // more detail in variable "lastAction"
+    short act = 0;
+    // Get current mobility
+    inet::Coord curPos = ueMob->getCurrentPosition();
+
+    // average the broadcast period
+    simtime_t aveP = 0;
+    for(unsigned int i = 0; i < nearCAM.size(); i++){
+        // delete out of range CAM
+        if (curPos.distance(nearCAM[i]->getPos()) > 500){
+            delete nearCAM[i];
+            nearCAM.erase(nearCAM.begin()+i);
+            continue;
+        }
+        aveP += nearCAM[i]->getPeriod();
+    }
+//    aveP += period_;
+//    aveP /= (nearCAM.size() + 1);
+    //    aveP /= (nearCAM.size() + 1);
+
+    // Line 1: calculate AoI
+    double aoi = 0;
+    for(unsigned int i = 0; i < nearCAM.size(); i++){
+        aoi += (t - SIMTIME_DBL(nearCAM[i]->getTimestamp()));
+    }
+    aoi /= nearCAM.size();
+
+    // self risk assess
+    // maybe do this periodically and automatically in self message ???
+    selfRisk = selfRiskAssess( selfCAM, 0.5);
+    double curSpeed = ueMobCmd->getSpeed();
+    emit(speed_, curSpeed);
+    emit(acceleration_, ueMobCmd->getAcceleration());
+
+    // Line 1: calculate TAoI
+    double taoi = selfRisk ? aoi : 0;
+    emit(taoi_, taoi);
+
+    // Line 2 - 3: period should be average period
+    if (aoi > 2 * SIMTIME_DBL(aveP)) {
+        act = 1;
+    }
+
+    // Line 4 - 14: core TAoI decision
+    if (!selfRisk) {
+        act = 0;
+    } else if(selfRisk){
+        if(nearCAM.size() == 0){
+            act = 0;
+        } else if (taoi < lastTAoI) {
+            if (lastAction == 0){
+                act = 1;
+            }
+            else{
+                act = lastAction;
+            }
+        } else if (taoi > lastTAoI) {
+            if (lastAction == 0){
+                act = -1;
+            }
+            else{
+                act = -lastAction;
+            }
+        } else if (taoi == lastTAoI) {
+            act = 0;
+        }
+    }
+
+    emit(action_, act);
+
+    // save TAoI and act for next round
+    lastTAoI = taoi;
+    lastAction = act;
+
+    // Line 15 - 20
+    if (act == 1) {
+        period_ *= rcf;
+    } else if (act == -1) {
+        period_ /= rcf;
+    } else if (act == 0) {
+        // yes, nothing change, still hate the rainy day.
+        period_ = period_;
+    } else {
+        EV << "Mode4CAM::TAoI_RateControl - ERROR! unexpected action" << endl;
+    }
+
+    ueMobCmd->setAcionStepLength(SIMTIME_DBL(period_), true);
+
+    EV << "Mode4CAM::TAoI_RateControl: end - "
+            << "period[" << period_ << "], "
+            << "TAoI[" << taoi << "], "
+            << "Action[" << act << "], "
+            << endl;
+
+    // TEST
+//    period_ = 0.1;
+
+    return period_;
+}
+
+void Mode4CAM::finish()
+{
+    cancelAndDelete(selfSender_);
+    cancelAndDelete(selfTAoISender_);
+}
+
+Mode4CAM::~Mode4CAM()
+{
+    binder_->unregisterNode(nodeId_);
+}

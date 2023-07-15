@@ -1,0 +1,15 @@
+<launch>
+  <basedir path="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001"/>
+  <copy file="ls.net.xml"/>
+  <copy file="ls.rou.xml"/>
+  <copy file="ls.con.xml"/>
+  <copy file="ls.edg.xml"/>
+  <copy file="ls.nod.xml"/>
+  <copy file="ls.typ.xml"/>
+  <copy file="setting.xml"/>
+  <copy file="poi.xml"/>
+  <copy file="tree.png"/>
+  <copy file="tree1.png"/>
+  <copy file="499.000.xml.gz"/>
+  <copy file="ls.sumocfg" type="config"/>
+</launch>
