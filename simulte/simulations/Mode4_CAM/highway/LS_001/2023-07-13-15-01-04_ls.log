@@ -1,0 +1,15 @@
+Integration method was set to 'ballistic', since a default action step length was specified.
+Loading net-file from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.net.xml' ... done (24ms).
+Loading additional-files from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/poi.xml' ... done (35ms).
+Loading done.
+Simulation started with time: 0.000
+Simulation ended at time: 77.109
+Performance: 
+ Duration: 49.252s
+ Real time factor: 1.5656
+ UPS: 27670.267197
+Vehicles: 
+ Inserted: 31 (Loaded: 3845)
+ Running: 31
+ Waiting: 1409
+

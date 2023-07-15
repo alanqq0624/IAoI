@@ -1,0 +1,18 @@
+Integration method was set to 'ballistic', since a default action step length was specified.
+Loading net-file from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated/lust.net.xml' ... done (598ms).
+Loading additional-files from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated/vtypes.add.xml' ... done (1ms).
+Loading additional-files from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated/busstops.add.xml' ... done (6ms).
+Loading additional-files from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated/e1detectors.add.xml' ... done (26ms).
+Loading additional-files from '/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/lust_001_actuated/lust.poly.xml' ... done (248ms).
+Loading done.
+Simulation started with time: 0.000
+Simulation ended at time: 37.078
+Performance: 
+ Duration: 25.715s
+ Real time factor: 1.44188
+ UPS: 70173.906280
+Vehicles: 
+ Inserted: 86 (Loaded: 335)
+ Running: 83
+ Waiting: 9
+

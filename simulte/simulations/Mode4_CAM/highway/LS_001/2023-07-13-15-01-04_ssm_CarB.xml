@@ -1,0 +1,5832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-07-13 15:01:05 by Eclipse SUMO GUI Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.net.xml"/>
+        <route-files value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.rou.xml"/>
+        <additional-files value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/poi.xml"/>
+    </input>
+
+    <output>
+        <output-prefix value="TIME_"/>
+        <summary-output value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.summary.xml"/>
+        <tripinfo-output value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+        <collision-output value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.collision.xml"/>
+        <save-state.times value="499"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="870"/>
+        <step-length value="0.001"/>
+    </time>
+
+    <processing>
+        <ignore-junction-blocker value="20"/>
+        <collision.action value="teleport"/>
+        <scale value="5"/>
+        <time-to-teleport value="600"/>
+        <max-depart-delay value="600"/>
+        <default.action-step-length value="1"/>
+        <default.carfollowmodel value="CACC"/>
+    </processing>
+
+    <routing>
+        <routing-algorithm value="dijkstra"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <log value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/ls.log"/>
+    </report>
+
+    <emissions>
+        <device.emissions.probability value="1"/>
+        <device.emissions.begin value="500"/>
+    </emissions>
+
+    <ssm_device>
+        <device.ssm.probability value="1"/>
+        <device.ssm.measures value="TTC DRAC PET BR SGAP TGAP"/>
+        <device.ssm.thresholds value="3.0 3.0 2.0 0.0 0.2 0.5"/>
+        <device.ssm.trajectories value="true"/>
+        <device.ssm.range value="50"/>
+        <device.ssm.extratime value="5"/>
+        <device.ssm.file value="ssm_AL.xml"/>
+        <device.ssm.geo value="false"/>
+        <device.ssm.write-positions value="false"/>
+        <device.ssm.write-lane-positions value="false"/>
+    </ssm_device>
+
+    <gui_only>
+        <gui-settings-file value="/home/mnetlab/SSD_2/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/Mode4_CAM/highway/LS_001/setting.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<SSMLog>
+    <globalMeasures ego="0-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="0-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="120-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="150-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="180-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="210-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="30-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="60-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh12">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh12.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh12.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh12.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh12.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh13">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh13.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh13.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh13.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh13.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh14">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh14.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh14.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh14.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh14.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh15">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh15.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh15.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh15.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh15.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh16">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh16.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh16.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh16.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh16.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh17">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh17.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh17.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh17.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh17.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh18">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh18.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh18.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh18.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh18.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh19">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh19.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh19.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh19.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh19.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh20">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh20.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh20.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh20.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh20.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh21">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh21.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh21.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh21.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh21.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh22">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh22.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh22.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh22.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh22.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh23">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh23.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh23.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh23.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh23.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh60">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh60.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh60.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh60.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh60.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh61">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh61.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh61.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh61.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh61.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh62">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh62.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh62.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh62.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh62.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh63">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh63.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh63.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh63.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh63.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh64">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh64.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh64.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh64.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh64.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh65">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh65.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh65.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh65.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh65.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh66">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh66.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh66.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh66.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh66.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh67">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh67.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh67.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh67.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh67.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh68">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh68.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh68.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh68.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh68.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh69">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh69.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh69.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh69.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh69.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh70">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh70.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh70.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh70.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh70.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh71">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh71.1">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh71.2">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh71.3">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+    <globalMeasures ego="90-veh71.4">
+        <timeSpan values=""/>
+        <BRSpan values=""/>
+        <SGAPSpan values=""/>
+        <TGAPSpan values=""/>
+    </globalMeasures>
+</SSMLog>

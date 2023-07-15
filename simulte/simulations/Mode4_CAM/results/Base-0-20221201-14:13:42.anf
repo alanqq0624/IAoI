@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/lte/simulations/Mode4_CAM/results/Base/Base-0-20221201-14:13:42-*.vec"/>
+    <inputs name="/lte/simulations/Mode4_CAM/results/Base/Base-0-20221201-14:13:42-*.sca"/>
+  </inputs>
+  <datasets/>
+  <chartSheets/>
+</scave:Analysis>

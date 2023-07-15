@@ -1,0 +1,14 @@
+<launch>
+  <basedir path="/home/mnetlab/alanqq0624/Veins/simulte_opencv2x_backup/simulte/simulations/rtcplus/rtcplus/012"/>
+  <copy file="rtcplus.net.xml"/>
+  <copy file="rtcplus.rou.xml"/>
+  <copy file="rtcplus.con.xml"/>
+  <copy file="rtcplus.edg.xml"/>
+  <copy file="rtcplus.nod.xml"/>
+  <copy file="rtcplus.typ.xml"/>
+  <copy file="setting.xml"/>
+  <copy file="poi.xml"/>
+  <copy file="tree.png"/>
+  <copy file="tree1.png"/>
+  <copy file="rtcplus.sumocfg" type="config"/>
+</launch>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+<!--
+<time-to-teleport value="-1"/>
+
+    <battery>
+    	<device.battery.track-fuel value="true"/>
+    	<emission-output value="ls.emission.xml"/>
+    </battery>
+
+<load-state value="499.000.xml.gz"/>
+<load-state.offset value="499"/>
+
+        <has.ssm.device value="true"/>
+-->
+
+    <input>
+        <net-file value="ls.net.xml"/>
+        <route-files value="ls.rou.xml"/>
+		<additional-files value="poi.xml"/>
+    </input>
+
+	<output>
+        <output-prefix value = "TIME_"/>
+        <summary-output value="ls.summary.xml"/>
+        <tripinfo-output value="ls.tripinfo.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+        <collision-output value="ls.collision.xml"/>
+        
+		<save-state.times value="499"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="870"/>
+        <step-length value="0.001"/>
+    </time>
+
+    <processing>
+        
+        <ignore-junction-blocker value="20"/>
+        <time-to-teleport value="600"/>
+        <max-depart-delay value="600"/>
+        <routing-algorithm value="dijkstra"/>
+        <scale value="5"/>
+        <collision.action value="teleport"/>
+        <default.action-step-length value="1"/>
+        <default.carfollowmodel value="CACC"/>
+        <device.emissions.probability value="1.0"/>
+        <device.emissions.begin value="500"/>
+        <device.ssm.probability value="1.0"/>
+    	<device.ssm.measures value="TTC DRAC PET BR SGAP TGAP"/>
+    	<device.ssm.thresholds value="3.0 3.0 2.0 0.0 0.2 0.5"/> 
+    	<device.ssm.range value="50.0" />
+    	<device.ssm.extratime value="5.0" />
+    	<device.ssm.file value="ssm_AL.xml" />
+    	<device.ssm.trajectories value="true" />
+    	<device.ssm.geo value="false" />
+    	<device.ssm.write-positions value="false" />
+    	<device.ssm.write-lane-positions value="false" />
+    </processing>
+	
+    
+    <gui_only>
+        <gui-settings-file value="setting.xml"/>
+    </gui_only>
+    <report>
+        <verbose value="true"/>
+        <log value="ls.log"/>
+    </report>
+	
+</configuration>
